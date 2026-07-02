@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quvonchbek Ibragimov — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+
+  <div class="cursor-star" id="cursorStar"></div>
+
+  <nav class="nav">
+    <div class="nav-mark">✦</div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link" data-label="Men haqimda">Men haqimda</a></li>
+      <li><a href="#skills" class="nav-link" data-label="Ko'nikmalar">Ko'nikmalar</a></li>
+      <li><a href="#projects" class="nav-link" data-label="Loyihalar">Loyihalar</a></li>
+      <li><a href="#contact" class="nav-link" data-label="Aloqa">Aloqa</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menyu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="eyebrow-star">✦</span> Sfera Academy bitiruvchisi</p>
+      <h1 class="hero-title">
+        <span class="line">Quvonchbek</span>
+        <span class="line accent">Ibragimov</span>
+      </h1>
+      <p class="hero-role">Full-stack dasturchi <span class="dot">·</span> Interfeys dizayneri</p>
+      <p class="hero-desc">Men g'oyalarni tez va sifatli ravishda ishlaydigan mahsulotlarga aylantiraman.
+        Kod yozish — mening uchun koinotni tartibga solishga o'xshaydi: har bir qism o'z o'rnida turishi kerak.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Loyihalarni ko'rish</a>
+        <a href="#contact" class="btn btn-ghost">Bog'lanish</a>
+      </div>
+      <div class="hero-coords">
+        <span>RA 21°</span><span>DEC 04°</span><span>EST. 2026</span>
+      </div>
+    </div>
+
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <img src="assets/profile.png" alt="Quvonchbek Ibragimov" class="portrait-img">
+        <svg class="portrait-burst" viewBox="0 0 100 100">
+          <path d="M50 0 L58 42 L100 50 L58 58 L50 100 L42 58 L0 50 L42 42 Z" />
+        </svg>
+      </div>
+      <p class="portrait-caption"> </p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="about">
+      <p class="eyebrow"><span class="eyebrow-star">✦</span> Men haqimda</p>
+      <div class="about-grid">
+        <h2 class="section-title">Aniqlik va<br><span class="accent">g'ayrat</span> bilan quraman.</h2>
+        <div class="about-body">
+          <p>Men Sfera Academy'da dasturlash asoslarini chuqur o'rgangan, veb-texnologiyalar va foydalanuvchi
+            interfeyslarini yaratishga ishtiyoqli dasturchiman. Har bir loyihada aniqlik, tozalik va real
+            muammoni hal qilishga e'tibor qarataman.</p>
+          <p>Bo'sh vaqtimda yangi texnologiyalarni sinab ko'raman, ochiq manba loyihalarga hissa qo'shaman
+            va o'z bilimlarimni boshqalarga ulashishni yoqtiraman.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Loyihalar</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Yillik tajriba</span></div>
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">G'ayrat</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <p class="eyebrow"><span class="eyebrow-star">✦</span> Ko'nikmalar</p>
+      <h2 class="section-title">Quroling'lar to'plami</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-mark">JS</span>
+          <h3>JavaScript</h3>
+          <p>ES6+, async/await, DOM boshqaruvi va zamonaviy frontend arxitekturasi.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-mark">⬡</span>
+          <h3>React</h3>
+          <p>Komponentlarga asoslangan, tez va qayta ishlatiladigan interfeyslar.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-mark">{ }</span>
+          <h3>Node.js</h3>
+          <p>REST API, autentifikatsiya va ma'lumotlar bazasi bilan ishlash.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-mark">▦</span>
+          <h3>UI / UX</h3>
+          <p>Figma'da prototip yaratish va foydalanuvchiga qulay interfeys dizayni.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-mark">⌘</span>
+          <h3>Git & GitHub</h3>
+          <p>Versiya nazorati, jamoaviy ishlash va kod sifatini boshqarish.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-mark">◐</span>
+          <h3>Python</h3>
+          <p>Avtomatlashtirish, ma'lumotlarni tahlil qilish va skript yozish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow"><span class="eyebrow-star">✦</span> Loyihalar</p>
+      <h2 class="section-title">Yaqinda qilingan ishlar</h2>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-btn active" data-filter="all">Barchasi</button>
+        <button class="filter-btn" data-filter="web">Veb</button>
+        <button class="filter-btn" data-filter="app">Ilova</button>
+        <button class="filter-btn" data-filter="design">Dizayn</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-cat="web">
+          <div class="project-glow"></div>
+          <span class="project-tag">Veb</span>
+          <h3>Nova Store</h3>
+          <p>Kichik biznes uchun to'liq funksional onlayn do'kon platformasi.</p>
+          <span class="project-link">Ko'rish →</span>
+        </article>
+        <article class="project-card" data-cat="app">
+          <div class="project-glow"></div>
+          <span class="project-tag">Ilova</span>
+          <h3>Orbit Tasks</h3>
+          <p>Kundalik vazifalarni rejalashtirish uchun minimalist mobil ilova.</p>
+          <span class="project-link">Ko'rish →</span>
+        </article>
+        <article class="project-card" data-cat="design">
+          <div class="project-glow"></div>
+          <span class="project-tag">Dizayn</span>
+          <h3>Lumen UI Kit</h3>
+          <p>Zamonaviy interfeyslar uchun komponentlar to'plami va dizayn tizimi.</p>
+          <span class="project-link">Ko'rish →</span>
+        </article>
+        <article class="project-card" data-cat="web">
+          <div class="project-glow"></div>
+          <span class="project-tag">Veb</span>
+          <h3>Meridian Blog</h3>
+          <p>Tez yuklanadigan, SEO'ga optimallashtirilgan shaxsiy blog platformasi.</p>
+          <span class="project-link">Ko'rish →</span>
+        </article>
+        <article class="project-card" data-cat="app">
+          <div class="project-glow"></div>
+          <span class="project-tag">Ilova</span>
+          <h3>Pulse Fit</h3>
+          <p>Mashqlarni kuzatish va progress statistikasini ko'rsatuvchi ilova.</p>
+          <span class="project-link">Ko'rish →</span>
+        </article>
+        <article class="project-card" data-cat="design">
+          <div class="project-glow"></div>
+          <span class="project-tag">Dizayn</span>
+          <h3>Constellation Deck</h3>
+          <p>Startap taqdimoti uchun to'liq slayd va brend dizayni.</p>
+          <span class="project-link">Ko'rish →</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <p class="eyebrow"><span class="eyebrow-star">✦</span> Aloqa</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Kelajakdagi<br><span class="accent">loyiha </span>ni birga qura olamiz.</h2>
+          <p class="contact-desc">Savol, taklif yoki hamkorlik uchun quyidagi forma orqali yozing —
+            odatda 24 soat ichida javob beraman.</p>
+          <div class="contact-links">
+            <a href="mailto:sardor@example.com" class="contact-link">quvonchcoder00@example.com</a>
+            <a href="#" class="contact-link">@Ibragimov_quvonchbek</a>
+            <a href="#" class="contact-link">https://github.com/quvonch-dev</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-field">
+            <label for="name">Ismingiz</label>
+            <input type="text" id="name" name="name" placeholder="Ism Familiya" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="siz@misol.com" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Xabar</label>
+            <textarea id="message" name="message" rows="4" placeholder="Xabaringizni yozing..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Yuborish</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-mark">✦</div>
+    <p>© 2026 Quvonchbek Ibragimov. Barcha huquqlar himoyalangan.</p>
+    <a href="#top" class="footer-top">Yuqoriga ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
